@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Application.ShowData;
+using Prism.Commands;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,8 @@ namespace ShowModule.ViewModels
     public class ViewAViewModel : BindableBase
     {
         private string _message;
+        private readonly IShowData showData;
+
         public string Message
         {
             get { return _message; }
@@ -20,9 +23,11 @@ namespace ShowModule.ViewModels
 
         public DelegateCommand<string> ShowMessageCommand { get; private set; }
 
-        public ViewAViewModel()
+        public ViewAViewModel(IShowData showData)
         {
             Message = "View A from your Prism Module";
+            this.showData = showData;
+            var a= showData.ShowDataMsg();
         }
     }
 }

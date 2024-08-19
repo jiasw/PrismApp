@@ -1,4 +1,5 @@
-﻿using Prism.Ioc;
+﻿using Application.ShowData;
+using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
 using ShowModule.Views;
@@ -22,6 +23,7 @@ namespace ShowModule
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.Register<IShowData, ShowData>();
             Console.WriteLine("ShowModuleModule registering types");
         }
     }
