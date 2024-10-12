@@ -14,7 +14,13 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Column="0" HorizontalAlignment="Center" Grid.ColumnSpan="2" Text="Title" FontSize="16" />
-        <TextBlock Grid.Column="0" Grid.Row="1" Text="Menu" FontSize="16" />
+        
+        <StackPanel Orientation="Vertical"  Grid.Row="1">
+            <TextBlock Text="Menu" FontSize="16" />
+            <Button Content="显示a页面" Command="{Binding ShowViewACommand}" ></Button>
+            <Button Content="显示b页面" Command="{Binding ShowViewBCommand}"></Button>
+        </StackPanel>
+        
         <ContentControl Grid.Column="1" Grid.Row="1" prism:RegionManager.RegionName="ContentRegion" />
     </Grid>
 </Window>

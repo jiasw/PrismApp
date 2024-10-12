@@ -23,6 +23,8 @@ namespace ShowModule
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterForNavigation<ViewA>(); // 注册视图
+            containerRegistry.RegisterForNavigation<ViewB>();
             containerRegistry.Register<IShowData, ShowData>();
             Console.WriteLine("ShowModuleModule registering types");
         }
