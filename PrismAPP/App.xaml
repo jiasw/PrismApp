@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:PrismAPP"
              xmlns:prism="http://prismlibrary.com/" >
     <Application.Resources>
-         
+            <ResourceDictionary Source="pack://application:,,,/WpfCommonLayer;component/Style/MainStyle.xaml"/>
+        
     </Application.Resources>
 </prism:PrismApplication>

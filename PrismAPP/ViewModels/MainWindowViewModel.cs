@@ -27,12 +27,12 @@ namespace PrismAPP.ViewModels
 
         private void ExecuteShowViewA()
         {
-            _regionManager.RequestNavigate("MainRegion", "ViewA");
+            _regionManager.RequestNavigate("ContentRegion", "ViewA");
         }
 
         private void ExecuteShowViewB()
         {
-            _regionManager.RequestNavigate("MainRegion", "ViewB");
+            _regionManager.RequestNavigate("ContentRegion", "ViewB");
         }
     }
 }

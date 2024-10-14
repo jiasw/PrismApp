@@ -9,5 +9,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShowModule\ShowModule.csproj" />
+    <ProjectReference Include="..\WpfCommonLayer\WpfCommonLayer.csproj" />
   </ItemGroup>
 </Project>
