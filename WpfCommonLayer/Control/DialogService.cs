@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.ShowData.MessageBoxService
+namespace Prism.CommonLayer.Control
 {
-    internal class Class1
+    internal class DialogService
     {
     }
 }

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Prism.Application.Contract;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.ShowData
+namespace Prism.Application.ShowData
 {
     public class ShowData : IShowData
     {

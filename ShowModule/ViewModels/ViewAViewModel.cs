@@ -1,4 +1,4 @@
-﻿using Application.ShowData;
+﻿using Prism.Application.Contract;
 using Prism.Commands;
 using Prism.Mvvm;
 using System;
@@ -27,7 +27,7 @@ namespace ShowModule.ViewModels
         {
             Message = "View A from your Prism Module";
             this.showData = showData;
-            var a= showData.ShowDataMsg();
+            Message = showData.ShowDataMsg();
         }
     }
 }

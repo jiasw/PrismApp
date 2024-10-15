@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.ShowData
+namespace Prism.Application.Contract.Infrastructure
 {
-    public interface IShowData
+    public interface ILogHelper
     {
-        public string ShowDataMsg();
+        public void Log(string message);
+
     }
 }

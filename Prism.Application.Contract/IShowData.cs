@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfCommonLayer.Control
+namespace Prism.Application.Contract
 {
-    internal class Class1
+    public interface IShowData
     {
+        public string ShowDataMsg();
     }
 }

@@ -1,4 +1,4 @@
-﻿using Application.ShowData;
+﻿using Prism.Application.Contract;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
@@ -25,7 +25,7 @@ namespace ShowModule
         {
             containerRegistry.RegisterForNavigation<ViewA>(); // 注册视图
             containerRegistry.RegisterForNavigation<ViewB>();
-            containerRegistry.Register<IShowData, ShowData>();
+            containerRegistry.Register<IShowData, Prism.Application.ShowData.ShowData>();
             Console.WriteLine("ShowModuleModule registering types");
         }
     }

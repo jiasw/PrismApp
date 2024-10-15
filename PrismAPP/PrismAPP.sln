@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrismAPP", "PrismAPP.csproj", "{BFC7FC83-07C3-4F3A-A87C-C13E70DDF4E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.APP", "Prism.APP.csproj", "{BFC7FC83-07C3-4F3A-A87C-C13E70DDF4E9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowModule", "..\ShowModule\ShowModule.csproj", "{F5BB5586-3C35-4CBD-8565-996771C0CE9A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{C9235EBF-3DEB-4A23-B78D-1C2CE1076B8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.Application", "..\Application\Prism.Application.csproj", "{4D599FC4-379D-41AE-9ED4-1A7FBE2226D0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{8F097CD1-B3F3-4EFE-8255-0DA11E2F5482}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.CommonLayer", "..\WpfCommonLayer\Prism.CommonLayer.csproj", "{3A06C6D4-9F24-4E75-AD4D-9B6D4FA95A3C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPFUI", "WPFUI", "{3F04F4BC-09FA-45B5-A18E-9E931638DA70}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module", "Module", "{BB614931-6186-4F54-B332-D657545712E6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "..\Application\Application.csproj", "{4D599FC4-379D-41AE-9ED4-1A7FBE2226D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Application.Contract", "..\Prism.Application.Contract\Prism.Application.Contract.csproj", "{4124E965-2EDA-40F8-8A4C-3CCF3BC8438A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCommonLayer", "..\WpfCommonLayer\WpfCommonLayer.csproj", "{3A06C6D4-9F24-4E75-AD4D-9B6D4FA95A3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Domain", "..\Prism.Domain\Prism.Domain.csproj", "{FFB3E8FD-E5DA-4E6E-96A1-0B60C29BA61D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,15 +39,20 @@ Global
 		{3A06C6D4-9F24-4E75-AD4D-9B6D4FA95A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A06C6D4-9F24-4E75-AD4D-9B6D4FA95A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A06C6D4-9F24-4E75-AD4D-9B6D4FA95A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4124E965-2EDA-40F8-8A4C-3CCF3BC8438A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4124E965-2EDA-40F8-8A4C-3CCF3BC8438A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4124E965-2EDA-40F8-8A4C-3CCF3BC8438A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4124E965-2EDA-40F8-8A4C-3CCF3BC8438A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB3E8FD-E5DA-4E6E-96A1-0B60C29BA61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB3E8FD-E5DA-4E6E-96A1-0B60C29BA61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB3E8FD-E5DA-4E6E-96A1-0B60C29BA61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB3E8FD-E5DA-4E6E-96A1-0B60C29BA61D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{BFC7FC83-07C3-4F3A-A87C-C13E70DDF4E9} = {3F04F4BC-09FA-45B5-A18E-9E931638DA70}
-		{F5BB5586-3C35-4CBD-8565-996771C0CE9A} = {3F04F4BC-09FA-45B5-A18E-9E931638DA70}
-		{4D599FC4-379D-41AE-9ED4-1A7FBE2226D0} = {C9235EBF-3DEB-4A23-B78D-1C2CE1076B8F}
-		{3A06C6D4-9F24-4E75-AD4D-9B6D4FA95A3C} = {3F04F4BC-09FA-45B5-A18E-9E931638DA70}
+		{F5BB5586-3C35-4CBD-8565-996771C0CE9A} = {BB614931-6186-4F54-B332-D657545712E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5F6B0580-7DEF-4956-A965-4730402DE1BA}

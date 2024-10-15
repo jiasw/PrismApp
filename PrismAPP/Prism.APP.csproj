@@ -9,6 +9,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShowModule\ShowModule.csproj" />
-    <ProjectReference Include="..\WpfCommonLayer\WpfCommonLayer.csproj" />
+    <ProjectReference Include="..\WpfCommonLayer\Prism.CommonLayer.csproj" />
   </ItemGroup>
 </Project>
