@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.APP", "Prism.APP.csproj", "{BFC7FC83-07C3-4F3A-A87C-C13E70DDF4E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.APP", "PrismAPP\Prism.APP.csproj", "{BFC7FC83-07C3-4F3A-A87C-C13E70DDF4E9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowModule", "..\ShowModule\ShowModule.csproj", "{F5BB5586-3C35-4CBD-8565-996771C0CE9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowModule", "Modules\ShowModule\ShowModule.csproj", "{F5BB5586-3C35-4CBD-8565-996771C0CE9A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.Application", "..\Application\Prism.Application.csproj", "{4D599FC4-379D-41AE-9ED4-1A7FBE2226D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.Application", "Prism.Application\Prism.Application.csproj", "{4D599FC4-379D-41AE-9ED4-1A7FBE2226D0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.CommonLayer", "..\WpfCommonLayer\Prism.CommonLayer.csproj", "{3A06C6D4-9F24-4E75-AD4D-9B6D4FA95A3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.CommonLayer", "Prism.CommonLayer\Prism.CommonLayer.csproj", "{3A06C6D4-9F24-4E75-AD4D-9B6D4FA95A3C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module", "Module", "{BB614931-6186-4F54-B332-D657545712E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Application.Contract", "..\Prism.Application.Contract\Prism.Application.Contract.csproj", "{4124E965-2EDA-40F8-8A4C-3CCF3BC8438A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Application.Contract", "Prism.Application.Contract\Prism.Application.Contract.csproj", "{4124E965-2EDA-40F8-8A4C-3CCF3BC8438A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Domain", "..\Prism.Domain\Prism.Domain.csproj", "{FFB3E8FD-E5DA-4E6E-96A1-0B60C29BA61D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Domain", "Prism.Domain\Prism.Domain.csproj", "{FFB3E8FD-E5DA-4E6E-96A1-0B60C29BA61D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{FB94346E-3C5B-428E-85D2-2FAC64BFA811}"
 EndProject
