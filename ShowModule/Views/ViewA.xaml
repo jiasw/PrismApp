@@ -9,8 +9,16 @@
              xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True" >
     <Grid >
-        <TextBlock Text="{Binding Message}"
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Center" />
+        <StackPanel>
+            <TextBlock Text="{Binding Message}"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center" />
+            <Button Content="发布事件"
+               Command="{Binding PublishMessageCommand}"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center" />
+
+        </StackPanel>
+        
     </Grid>
 </UserControl>

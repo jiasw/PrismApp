@@ -1,4 +1,5 @@
-﻿using Prism.Ioc;
+﻿using Prism.Events;
+using Prism.Ioc;
 using Prism.Modularity;
 using PrismAPP.Views;
 using ShowModule;
@@ -18,14 +19,17 @@ namespace PrismAPP
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
+            containerRegistry.RegisterSingleton<IEventAggregator, EventAggregator>();
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             base.ConfigureModuleCatalog(moduleCatalog);
+
+
             //添加模块A
             moduleCatalog.AddModule<ShowModuleModule>();
+
         }
 
         //protected override IModuleCatalog CreateModuleCatalog()
