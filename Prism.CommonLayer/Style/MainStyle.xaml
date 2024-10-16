@@ -37,4 +37,83 @@
         
         
     </Style>
+
+    <Style x:Key="CustomWindowStyle" TargetType="{x:Type Window}">
+        <Setter Property="WindowChrome.WindowChrome">
+            <Setter.Value>
+                <WindowChrome CaptionHeight="30"
+              CornerRadius="15"
+              GlassFrameThickness="0"
+              NonClientFrameEdges="None"
+              ResizeBorderThickness="1"
+                              
+              UseAeroCaptionButtons="False" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BorderBrush" Value="#FF069F99" />
+        <Setter Property="Background" Value="#b5f5ec" />
+        
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Window}">
+
+                        <Grid>
+                        <Grid.Effect>
+                            <DropShadowEffect ShadowDepth="0" BlurRadius="10" Opacity="0.8" Color="#AAAAAA"/>
+                        </Grid.Effect>
+                        <Border Background="{TemplateBinding Background}"
+BorderBrush="{TemplateBinding BorderBrush}"
+BorderThickness="0,30,0,0">
+                                <Border.Effect>
+                                    <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="5"/>
+                                </Border.Effect>
+                                <AdornerDecorator>
+                                    <ContentPresenter />
+                                </AdornerDecorator>
+                            </Border>
+
+
+                            <DockPanel Height="30"
+   VerticalAlignment="Top"
+   LastChildFill="False">
+
+                                <TextBlock Margin="5,0,0,0"
+       VerticalAlignment="Center"
+       DockPanel.Dock="Left"
+       FontSize="16"
+       Foreground="White"
+       Text="{TemplateBinding Title}" />
+
+                                <Button x:Name="btnClose"
+    Width="15"
+    Margin="5"
+    Content="X"
+    DockPanel.Dock="Right"
+    WindowChrome.IsHitTestVisibleInChrome="True" />
+
+
+                                <Button x:Name="btnRestore"
+    Width="15"
+    Margin="5"
+    Content="#"
+    DockPanel.Dock="Right"
+    WindowChrome.IsHitTestVisibleInChrome="True" />
+
+                                <Button x:Name="btnMinimize"
+    Width="15"
+    Margin="5"
+    VerticalContentAlignment="Bottom"
+    Content="_"
+    DockPanel.Dock="Right"
+    WindowChrome.IsHitTestVisibleInChrome="True" />
+                            </DockPanel>
+
+                        </Grid>
+                
+                        
+                   
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>

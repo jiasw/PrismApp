@@ -3,29 +3,33 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="350" Width="525" >
+        Title="{Binding Title}" Height="350" Width="525"  Style="{StaticResource CustomWindowStyle}" >
 
-    <Border CornerRadius="10">
+    <Border CornerRadius="10" BorderThickness="0">
 
-        <Grid>
+        <Grid Margin="10">
             <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="130" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="49*" />
+                <ColumnDefinition Width="26*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" HorizontalAlignment="Center" Grid.ColumnSpan="2" Text="Title" FontSize="16" />
 
-            <StackPanel Orientation="Vertical"  Grid.Row="1">
+
+            <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Text="Title" FontSize="16" />
+
+            <StackPanel Orientation="Vertical"  Grid.Row="1" Margin="0,20,0,0" Grid.RowSpan="2">
                 <TextBlock Text="Menu" FontSize="16" />
                 <Button Content="显示a页面" Command="{Binding ShowViewACommand}" ></Button>
                 <Button Content="显示b页面" Command="{Binding ShowViewBCommand}"></Button>
             </StackPanel>
 
-            <ContentControl Grid.Column="1" Grid.Row="1" prism:RegionManager.RegionName="ContentRegion" />
+            <ContentControl Grid.Column="1" Grid.Row="1" prism:RegionManager.RegionName="ContentRegion" Grid.ColumnSpan="2" />
         </Grid>
     </Border>
-    
+
 </Window>
