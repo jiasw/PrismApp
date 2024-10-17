@@ -58,9 +58,7 @@
                 <ControlTemplate TargetType="{x:Type Window}">
 
                         <Grid>
-                        <Grid.Effect>
-                            <DropShadowEffect ShadowDepth="0" BlurRadius="10" Opacity="0.8" Color="#AAAAAA"/>
-                        </Grid.Effect>
+                        
                         <Border Background="{TemplateBinding Background}"
 BorderBrush="{TemplateBinding BorderBrush}"
 BorderThickness="0,30,0,0">

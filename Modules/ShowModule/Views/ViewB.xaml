@@ -6,7 +6,31 @@
              xmlns:local="clr-namespace:ShowModule.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    
     <Grid Background="Wheat">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="450" />
+            
+        </Grid.RowDefinitions>
         <TextBlock Text="{Binding Message}" />
+
+      
+
+            <Viewport3D Name="viewport3D" Grid.Row="1" >
+                <!-- 添加光照 -->
+                <ModelVisual3D>
+                    <ModelVisual3D.Content>
+                        <DirectionalLight Color="White" Direction="-1,-1,-1"/>
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+                <!-- 设置相机 -->
+                <Viewport3D.Camera>
+                    <PerspectiveCamera Position="0,5,15" LookDirection="0,0,-1" UpDirection="0,1,0"/>
+                </Viewport3D.Camera>
+
+            </Viewport3D>
+       
+      
     </Grid>
 </UserControl>
