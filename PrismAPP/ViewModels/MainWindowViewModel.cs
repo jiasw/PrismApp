@@ -17,12 +17,15 @@ namespace PrismAPP.ViewModels
 
         public ICommand ShowViewACommand { get; private set; }
         public ICommand ShowViewBCommand { get; private set; }
+
+        public ICommand ShowChartCommand { get; private set; }
         public MainWindowViewModel(IRegionManager regionManager)
         {
             _regionManager = regionManager;
 
             ShowViewACommand = new DelegateCommand(ExecuteShowViewA);
             ShowViewBCommand = new DelegateCommand(ExecuteShowViewB);
+            ShowChartCommand = new DelegateCommand(ShowChart);
         }
 
         private void ExecuteShowViewA()
@@ -34,5 +37,11 @@ namespace PrismAPP.ViewModels
         {
             _regionManager.RequestNavigate("ContentRegion", "ViewB");
         }
+
+        private void ShowChart()
+        {
+            _regionManager.RequestNavigate("ContentRegion", "SimpleDemo");
+        }
+
     }
 }

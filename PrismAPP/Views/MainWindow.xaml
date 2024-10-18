@@ -10,7 +10,6 @@
         <Grid Margin="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="30" />
-                <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -26,6 +25,7 @@
                 <TextBlock Text="Menu" FontSize="16" />
                 <Button Content="显示a页面" Command="{Binding ShowViewACommand}" ></Button>
                 <Button Content="显示b页面" Command="{Binding ShowViewBCommand}"></Button>
+                <Button Content="显示图表页面" Command="{Binding ShowChartCommand}"></Button>
             </StackPanel>
 
             <ContentControl Grid.Column="1" Grid.Row="1" prism:RegionManager.RegionName="ContentRegion" Grid.ColumnSpan="2" />

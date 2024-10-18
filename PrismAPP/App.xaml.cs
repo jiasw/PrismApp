@@ -2,6 +2,7 @@
 using Prism.Ioc;
 using Prism.Modularity;
 using PrismAPP.Views;
+using Scottplot;
 using ShowModule;
 using System.Windows;
 
@@ -29,7 +30,7 @@ namespace PrismAPP
 
             //添加模块A
             moduleCatalog.AddModule<ShowModuleModule>();
-
+            moduleCatalog.AddModule<ScottplotModule>();
         }
 
         //protected override IModuleCatalog CreateModuleCatalog()

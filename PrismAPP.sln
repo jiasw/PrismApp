@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{FB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowModule", "Modules\ShowModule\ShowModule.csproj", "{EBE47750-F91B-4640-8098-C1393AB81B94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScottplotCase", "Modules\Scottplot\ScottplotCase.csproj", "{069EE177-6411-4989-A74F-63FD5C659C91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,12 +51,17 @@ Global
 		{EBE47750-F91B-4640-8098-C1393AB81B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBE47750-F91B-4640-8098-C1393AB81B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBE47750-F91B-4640-8098-C1393AB81B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{069EE177-6411-4989-A74F-63FD5C659C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069EE177-6411-4989-A74F-63FD5C659C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069EE177-6411-4989-A74F-63FD5C659C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069EE177-6411-4989-A74F-63FD5C659C91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EBE47750-F91B-4640-8098-C1393AB81B94} = {BB614931-6186-4F54-B332-D657545712E6}
+		{069EE177-6411-4989-A74F-63FD5C659C91} = {BB614931-6186-4F54-B332-D657545712E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5F6B0580-7DEF-4956-A965-4730402DE1BA}
