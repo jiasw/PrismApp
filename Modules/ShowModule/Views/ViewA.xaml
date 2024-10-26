@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300"
+             d:DesignHeight="600" d:DesignWidth="600"
              xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True" Loaded="UserControl_Loaded" >
     <Grid >
@@ -17,10 +17,10 @@
                Command="{Binding PublishMessageCommand}"
                HorizontalAlignment="Center"
                VerticalAlignment="Center" />
-            <Button Content="ti事件" 
+            <Button Content="ti事件"  Click="Button_Click" Name="btnAddPoint"
    HorizontalAlignment="Center"
    VerticalAlignment="Center" />
-            <Canvas Background="Green" Height="300" Name="MyCanvas">
+            <Canvas Background="Green" Height="350" Name="MyCanvas">
                 
             </Canvas>
             

@@ -58,13 +58,17 @@ namespace ShowModule.Views
             {
                 Application.Current.Dispatcher.Invoke(() =>
                 {
-                    double newDataPoint = _random.Next(1, 50);
-                    _dataPoints.Add(newDataPoint);
-                    DrawLines();
+                    //double newDataPoint = _random.Next(1, 50);
+                    //_dataPoints.Add(newDataPoint);
+                    //DrawLines();
                 });
 
             };
             timer.Start();
+
+            double newDataPoint = _random.Next(1, 50);
+            _dataPoints.Add(newDataPoint);
+            DrawLines();
         }
 
 
@@ -93,6 +97,14 @@ namespace ShowModule.Views
                     drawingContext.DrawLine(linePen, startPoint, endPoint);
                 }
             }
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            double newDataPoint = _random.Next(1, 50);
+            _dataPoints.Add(newDataPoint);
+            DrawLines();
         }
     }
 }

@@ -25,6 +25,7 @@ namespace ShowModule
         {
             containerRegistry.RegisterForNavigation<ViewA>(); // 注册视图
             containerRegistry.RegisterForNavigation<ViewB>();
+            containerRegistry.RegisterForNavigation<DrawVisualTest>();
             containerRegistry.Register<IShowData, Prism.Application.ShowData.ShowData>();
             Console.WriteLine("ShowModuleModule registering types");
         }

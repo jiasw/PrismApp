@@ -35,12 +35,12 @@ namespace PrismAPP.ViewModels
 
         private void ExecuteShowViewB()
         {
-            _regionManager.RequestNavigate("ContentRegion", "ViewB");
+            _regionManager.RequestNavigate("ContentRegion", "DrawVisualTest");
         }
 
         private void ShowChart()
         {
-            _regionManager.RequestNavigate("ContentRegion", "SimpleDemo");
+            _regionManager.RequestNavigate("ContentRegion", "DataStreamer");
         }
 
     }
